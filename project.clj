@@ -6,7 +6,7 @@
   :dependencies [[org.clojure/clojure "1.10.3"]
                  [criterium "0.4.6"]
                  [clj-pdf "2.5.8" :exclude [com.github.librepdf/openpdf]]
-                 [com.github.librepdf/openpdf "1.3.27"]]
+                 [com.github.librepdf/openpdf "1.3.29"]]
   :main pdf-gen-performance.core
   :aot [pdf-gen-performance.core]
   :repl-options {:init-ns pdf-gen-performance.core})
