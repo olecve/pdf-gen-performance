@@ -23,7 +23,7 @@
       (throw (ex-info "There's no desktop." {:opening file-path} e)))))
 
 (defn create-temp-file! [tag]
-  (-> (File/createTempFile "performance-test-with-" tag ".pdf") .getCanonicalPath))
+  (-> (File/createTempFile (str "performance-test-with-" tag) ".pdf") .getCanonicalPath))
 
 (defn create-pdf-data []
   (concat
