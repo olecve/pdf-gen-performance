@@ -1,0 +1,28 @@
+* pdf-gen-performance
+* Results
+
+** clj-pdf (with openpdf 1.3.27)
+
+  #+begin_quote
+Evaluation count : 300 in 60 samples of 5 calls.
+      Execution time sample mean : 222.620068 ms
+             Execution time mean : 222.608761 ms
+Execution time sample std-deviation : 10.581668 ms
+    Execution time std-deviation : 10.622315 ms
+   Execution time lower quantile : 205.426998 ms ( 2.5%)
+   Execution time upper quantile : 242.331933 ms (97.5%)
+                   Overhead used : 7.537798 ns
+  #+end_quote
+
+** openpdf 1.3.27
+  
+  #+begin_quote
+Evaluation count : 660 in 60 samples of 11 calls.
+      Execution time sample mean : 98.413859 ms
+             Execution time mean : 98.483520 ms
+Execution time sample std-deviation : 6.351779 ms
+    Execution time std-deviation : 6.448953 ms
+   Execution time lower quantile : 88.701693 ms ( 2.5%)
+   Execution time upper quantile : 111.421847 ms (97.5%)
+                   Overhead used : 7.537798 ns
+  #+end_quote
